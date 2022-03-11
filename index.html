@@ -18,12 +18,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
-            <a class="navbar-brand" href="#">My Sohor</a>
+            <a class="navbar-brand" href="#">Inta Sohor</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -57,10 +61,86 @@
             <h1>Reported posts</h1>
         </div>
     </main>
+    <section class="container my-4" id="accoridian">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h4>How javascript works?</h4>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>JavaScript is a single threated , interpreted programming language , which can handle a
+                            single task at a time. JavaScript works asynchronous way , meaning it works to ensure
+                            non-blocking code execution. Asynchronous programming way is very useful for a faster
+                            execution of programs but it is difficult to develop. JavaScript uses different engines
+                            to
+                            run code in different browsers , such as- google chrome use v8 engine, Edge (Internet
+                            Explorer) use chakra , Mozilla Firefox use spider monkey, Safari use JavaScript core Web
+                            kit
+                            etc. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4> What is JavaScript event loop?</h4>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p> Event loop is a process to monitor bot the callback queue and the call stack .JavaScript
+                            works as a runtime model based on an event loop , which are working for executing codes
+                            ,
+                            collecting and processing events , executing queued sub stack. Event loop generally
+                            works
+                            like a message processed completely before another . It passes message through queue ,
+                            but
+                            if a message takes too much time to execute, it divided the message in many small parts
+                            so
+                            that the click or scroll are not get stacked. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h4> What are difference between localStorage and sessionStorage?</h4>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p> The difference between sessionStorage and localStorage is the session storage data is
+                            cleared when the page session end but the localStorage data is not expire. The both
+                            storage
+                            are located in the browser. When a new tab open in the browser , a unique page session
+                            get
+                            created and assigned to that particular tab. Closing a tab/window ends the session and
+                            clears objects in sessionStorage but not in the localStorage . Both the storage save
+                            data in
+                            the same way which is (key value) way . We can access data from both storage .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer></footer>
 
     <!-- add javascript  file  -->
     <script src="./js/app.js"></script>
+    <!-- bootstrap bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
